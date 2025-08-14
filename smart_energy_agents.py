@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 
 # n8n webhook URL
-n8n_webhook_url = "https://safeek05.app.n8n.cloud/webhook-test/energy-ai"
+n8n_webhook_url = "https://safeek05.app.n8n.cloud/webhook/energy-ai"
 
 st.title("Smart Energy AI Agents")
 
@@ -24,3 +24,4 @@ if st.button("Run AI Agents 🚀"):
             st.error(f"Error: {response.status_code}")
     else:
         st.warning("Please upload a file.")
+
