@@ -1,11 +1,8 @@
 import streamlit as st
 import requests
-import os
-from dotenv import load_dotenv
 
-# Load env variables
-load_dotenv()
-n8n_webhook_url = os.getenv("https://safeek05.app.n8n.cloud/webhook-test/energy-ai")
+# n8n webhook URL
+n8n_webhook_url = "https://safeek05.app.n8n.cloud/webhook-test/energy-ai"
 
 st.title("Smart Energy AI Agents")
 
